@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculator — HTML/CSS/JS</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <main class="calculator" role="application" aria-label="Calculator">
+      <section class="screen" aria-live="polite">
+        <div class="expression" id="expression" aria-hidden="false">0</div>
+        <div class="result" id="result">0</div>
+      </section>
+
+      <div class="keys" role="group" aria-label="Calculator buttons">
+        <button class="key clear" data-action="clear" aria-label="Clear">C</button>
+        <button class="key" data-action="back" aria-label="Backspace">←</button>
+        <button class="key" data-value="(" aria-label="Open parenthesis">(</button>
+        <button class="key" data-value=")" aria-label="Close parenthesis">)</button>
+
+        <button class="key" data-value="7">7</button>
+        <button class="key" data-value="8">8</button>
+        <button class="key" data-value="9">9</button>
+        <button class="key op" data-value="/" aria-label="Divide">÷</button>
+
+        <button class="key" data-value="4">4</button>
+        <button class="key" data-value="5">5</button>
+        <button class="key" data-value="6">6</button>
+        <button class="key op" data-value="*" aria-label="Multiply">×</button>
+
+        <button class="key" data-value="1">1</button>
+        <button class="key" data-value="2">2</button>
+        <button class="key" data-value="3">3</button>
+        <button class="key op" data-value="-" aria-label="Minus">−</button>
+
+        <button class="key wide" data-value="0">0</button>
+        <button class="key" data-value=".">.</button>
+        <button class="key op" data-value="+" aria-label="Plus">+</button>
+
+        <button class="key eq" data-action="equals" aria-label="Equals">=</button>
+      </div>
+
+      <div class="kbd-hint">Keyboard supported — digits, + - * / ( ) . Enter = to evaluate, Backspace to delete.</div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
